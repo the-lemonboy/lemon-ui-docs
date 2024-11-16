@@ -11,5 +11,8 @@ features:
   details: 开发者可以根据自己项目的需要按需引入所需模块，减小项目体积。
 - title: 提高效率
   details: 减去繁琐的UI设计，使用组件库提高开发效率。
+# - 默认值: `.theme-default-content :not(a) > img`
 footer: MIT Licensed | Copyright © 2023-present lemon
 ---
+
+#

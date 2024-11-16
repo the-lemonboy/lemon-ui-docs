@@ -100,9 +100,9 @@
 
 <script>
   export default {};
-</script scoped>
+</script>
 <style>
-  .demo-content {
+ .demo-content {
     background: #1c2d3b;
   }
   .frame-box {

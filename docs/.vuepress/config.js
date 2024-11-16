@@ -1,13 +1,16 @@
 module.exports = {
+   base:'/lemon-ui-docs/',
+   // base:''
    plugins: ['demo-container'], // 配置插
     lang:'zh-CN',
     title: 'lemon-ui-vue2',
     description: '可视化大屏UI组件库',
     // theme:'lemonui-docs-theme',
+   //  theme: 'default',
     themeConfig:{
          nav:[
             {text:'首页',link:'/'},
-            {text:'组件',link:'/components/guide'}
+            {text:'组件',link:'/components/guide.html'}
     ],
     sidebar:{
         '/components/' : [
@@ -16,15 +19,15 @@ module.exports = {
             collapsable: false, // 可选的, 默认值是 true,
             sidebarDepth: 1,    // 可选的, 默认值是 1
             children:[
-               {title:"快速上手",path:'/components/guide'},
+               {title:"快速上手",path:'/components/guide.html'},
+               {title:"屏幕自适应",path:'/components/screenAdaptive'},
                {title:"标题框",path:'/components/titleFrame'},
                {title:"边框",path:'/components/frame'},
                {title:"按钮",path:'/components/button'},
                {title:"加载框",path:'/components/loading'},
+               // {title:"表格",path:'/components/table'},
             ]
            }
-
-
         ]
       
     },

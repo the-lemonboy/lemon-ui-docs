@@ -5,9 +5,7 @@
   "license": "MIT",
   "devDependencies": {
     "@vuepress/plugin-register-components": "^1.9.9",
-    "node-sass": "^9.0.0",
-    "sass-loader": "^13.3.2",
-    "vuepress": "^1.9.9"
+    "vuepress": "^1.9.10"
   },
   "scripts": {
     "docs:dev": "vuepress dev docs",
@@ -16,8 +14,10 @@
   },
   "dependencies": {
     "core-js": "^2.0.0",
-    "element-ui": "^2.15.13",
-    "lemon-ui-vue2": "^0.0.11",
-    "vuepress-plugin-demo-container": "^0.2.0"
+    "lemon-ui-vue2": "^1.2.18",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^7.3.1",
+    "vuepress-plugin-demo-container": "^0.2.0",
+    "webpack": "^4.23.0"
   }
 }

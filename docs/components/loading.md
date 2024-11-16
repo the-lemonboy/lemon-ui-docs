@@ -62,7 +62,7 @@
 
 ```html
 <template>
-  <div class="box">
+  <div class="loader-box">
     <LELoading3 :backgroundColor="['#C0D8EE','#C0D8EE','#C0D8EE']"></LELoading3>
   </div>
 </template>

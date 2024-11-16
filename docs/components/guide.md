@@ -19,6 +19,7 @@ yarn add lemon-ui-vue2 -S
 ```javascript
 import Vue from 'vue';
 import LemonUI from 'lemon-ui-vue2';
+import 'lemon-ui-vue2/lib/lemonui.css';
 import App from './App.vue';
 
 Vue.use(LemonUI);
@@ -30,3 +31,44 @@ new Vue({
 ```
 
 ### 按需引入
+借助 babel-plugin-component，我们可以只引入需要的组件，以达到减小项目体积的目的。
+
+首先，安装 babel-plugin-component：
+```javascript
+npm install babel-plugin-component -D
+```
+然后，将babel.config.js修改为
+```javascripte
+module.exports = {
+  presets: [
+    '@vue/cli-plugin-babel/preset'
+  ],
+  plugins: [
+    ['component',
+    {
+      libraryName:'lemon-ui-vue2',
+      libDir:'lib/packages',
+      camel2Dash:true
+    },
+  ],
+],
+}
+```
+接下来，如果你只希望引入部分组件，比如 BorderBox1 和 TitleBox1,那么需要在 main.js 中写入以下内容：
+```javascript
+import Vue from 'vue';
+import { BorderBox1, BorderBox1 } from 'element-ui';
+import App from './App.vue';
+
+Vue.component(BorderBox1.name, BorderBox1);
+Vue.component(TitleBox1.name, TitleBox1);
+/* 或写为
+ * Vue.use(BorderBox1)
+ * Vue.use(TitleBox1)
+ */
+
+new Vue({
+  el: '#app',
+  render: h => h(App)
+});
+```

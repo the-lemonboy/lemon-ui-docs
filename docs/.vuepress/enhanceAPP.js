@@ -1,12 +1,17 @@
-import ElementUI from 'element-ui';
-import 'element-ui/lib/theme-chalk/index.css';
-import lemon from 'lemon-ui-vue2'
+// import lemon from 'lemon-ui-vue2'
+import 'lemon-ui-vue2/lib/theme-chalk/lemonui.css'
+// import '../../lib/theme-chalk/lemonui.css'
+// // import 'lemon-ui-vue2/lib/theme-chalk/src/index.scss'
+// import '../../theme-chalk/src/index.scss'
 
-export default async ({
+export default ({
   Vue
 }) => {
-  if (typeof process === 'undefined') {
-    Vue.use(ElementUI),
-    Vue.use(lemon)
-  }
+
+  Vue.mixin({
+    mounted() {
+        var lemon = require('lemon-ui-vue2')
+        Vue.use(lemon)
+    },
+})
 }
