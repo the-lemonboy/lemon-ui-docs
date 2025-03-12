@@ -169,6 +169,7 @@
   .demo-content {
     background: #1c2d3b;
   }
+
   .title-box {
     display: flex;
     justify-content: center;
