@@ -1,6 +1,5 @@
 module.exports = {
    base:'/lemon-ui-docs/',
-   // base:''
    plugins: ['demo-container'], // 配置插
     lang:'zh-CN',
     title: 'lemon-ui-vue2',
@@ -31,7 +30,9 @@ module.exports = {
         ]
       
     },
-
+    styles: {
+      index: '/styles/index.styl'
+    },
     repo: 'the-lemonboy/lemon-ui',
     // 自定义仓库链接文字。默认从 `themeConfig.repo` 中自动推断为
     // "GitHub"/"GitLab"/"Bitbucket" 其中之一，或是 "Source"。
