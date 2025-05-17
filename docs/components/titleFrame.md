@@ -127,7 +127,7 @@
 ::: demo ！！！引用下方注释部分的代码
 
 ```html
-<template>
+\<template>
   <div class="box1">
     <img :src="require('./assets/titlebox5.png')"></img>
   </div>
@@ -142,11 +142,6 @@
   }
 </style>
 <!-- <template>
-  <div class="box">
-    <img :src=./
-  </div>
-</template>
-<template>
   <div class="box">
     <LETitleBox5></LETitleBox5>
   </div>
@@ -175,12 +170,7 @@
     justify-content: center;
   }
 </style>
-<!-- <template>
-  <div class="box">
-    <img :src=./
-  </div>
-</template>
-<template>
+<!--  <template>
   <div class="box">
     <LETitleBox6></LETitleBox6>
   </div>
